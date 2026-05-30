@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Börsenreport — 30. May 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Inter',sans-serif;background:#f1f5f9;color:#1a1a2e;}
+.wrap{max-width:840px;margin:0 auto;padding:0 16px 60px;}
+.card{background:white;border-radius:16px;padding:24px;margin-bottom:18px;box-shadow:0 1px 4px rgba(0,0,0,.06);border:1px solid #e2e8f0;}
+.card-title{font-size:14px;font-weight:700;color:#0f172a;margin-bottom:16px;display:flex;align-items:center;gap:8px;letter-spacing:-.01em;}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+th{text-align:left;padding:8px 12px;background:#f8fafc;color:#94a3b8;font-size:11px;text-transform:uppercase;font-weight:600;border-bottom:1px solid #e2e8f0;}
+td{padding:12px;border-bottom:1px solid #f8fafc;vertical-align:top;}
+tr:last-child td{border-bottom:none;}
+ul{list-style:none;padding:0;}
+.sub{font-size:12px;color:#94a3b8;}
+.empty{color:#cbd5e1;font-style:italic;font-size:13px;}
+.tag{font-size:11px;padding:2px 8px;border-radius:20px;font-weight:600;}
+.green{background:#f0fdf4;color:#16a34a;}
+.red{background:#fef2f2;color:#dc2626;}
+.src-link{font-size:11px;color:#0066cc;text-decoration:none;margin-top:6px;display:inline-block;}
+.insider-row{border-left:3px solid #e2e8f0;padding:12px 14px;margin-bottom:10px;background:#fafafa;border-radius:0 8px 8px 0;}
+.insider-header{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:6px;}
+.insider-name{font-weight:600;font-size:14px;}
+.insider-note{font-size:13px;color:#64748b;}
+.ticker-badge{background:#f1f5f9;padding:2px 8px;border-radius:4px;font-size:13px;font-weight:600;}
+.event-row{display:flex;align-items:flex-start;gap:12px;margin-bottom:12px;font-size:14px;}
+.event-date{min-width:110px;font-size:12px;color:#94a3b8;font-weight:500;padding-top:2px;}
+.event-dot{font-size:10px;padding-top:4px;flex-shrink:0;}
+.dev-item{border-bottom:1px solid #f1f5f9;padding-bottom:14px;margin-bottom:14px;}
+.dev-item:last-child{border-bottom:none;margin-bottom:0;}
+.dev-title{font-weight:600;font-size:14px;margin-bottom:4px;}
+.accordion{border:1px solid #e2e8f0;border-radius:10px;overflow:hidden;margin-bottom:8px;}
+.acc-btn{width:100%;padding:14px 18px;background:white;border:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:600;color:#1a1a2e;font-family:'Inter',sans-serif;}
+.acc-btn:hover{background:#f8fafc;}
+.acc-arrow{transition:transform .2s;font-size:11px;color:#94a3b8;}
+.acc-body{border-top:1px solid #f1f5f9;}
+.divider{font-size:11px;text-transform:uppercase;color:#94a3b8;font-weight:600;margin:18px 0 10px;letter-spacing:.05em;}
+@media(max-width:600px){.grid3{grid-template-columns:1fr!important;}.card{padding:16px;}}
+</style>
+</head>
+<body>
+
+<!-- Live Ticker Tape -->
+<div style="background:#0f172a;position:sticky;top:0;z-index:100;height:46px;overflow:hidden;">
+  <div class="tradingview-widget-container" style="height:46px;">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+    {"symbols":[{"proName": "NASDAQ:NVDA", "title": "NVDA"}, {"proName": "NASDAQ:AAPL", "title": "AAPL"}, {"proName": "NASDAQ:TSLA", "title": "TSLA"}, {"proName": "BITSTAMP:BTCUSD", "title": "BTC"}, {"proName": "NASDAQ:MSTR", "title": "MSTR"}, {"proName": "NYSE:PLTR", "title": "PLTR"}, {"proName": "NASDAQ:GOOG", "title": "GOOG"}, {"proName": "LSE:3OIL", "title": "3OIL"}, {"proName": "CME:6H1!", "title": "6H"}],"showSymbolLogo":false,"colorTheme":"dark","isTransparent":false,"displayMode":"compact","locale":"de_DE"}
+    </script>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- Header -->
+  <div style="padding:28px 0 16px;">
+    <div style="font-size:11px;color:#94a3b8;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">Täglicher Börsenbericht</div>
+    <h1 style="font-size:24px;font-weight:700;color:#0f172a;letter-spacing:-.02em;">30. May 2026</h1>
+  </div>
+
+  <!-- Morning Summary -->
+  <div class="card">
+    <div class="card-title">🌅 Morgen-Marktzusammenfassung</div>
+    <ul><li style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#16a34a;margin-top:2px;flex-shrink:0;">●</span><span><a href="https://markets.businessinsider.com/premarket" target="_blank" style="color:inherit;text-decoration:underline dotted;">US-Futures zeigen positive Tendenz: Dow Jones Futures +0,61% auf 51.053, NASDAQ 100 Futures +0,27% auf 30.389,50 und S&P 500 Futures +0,12% auf 7.590,75 (Stand: 29. Mai 2026, 17:00 Uhr EDT).</a></span></li><li style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#16a34a;margin-top:2px;flex-shrink:0;">●</span><span><a href="https://markets.businessinsider.com/premarket" target="_blank" style="color:inherit;text-decoration:underline dotted;">Nikkei 225 springt um +2,53% auf 66.329,50 Punkte – starke Rallye an den asiatischen Märkten beflügelt die globale Risikobereitschaft.</a></span></li><li style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#dc2626;margin-top:2px;flex-shrink:0;">●</span><span><a href="https://wincountry.com/2026/05/29/fed-officials-mull-raising-rates-to-curb-growing-inflation-risk" target="_blank" style="color:inherit;text-decoration:underline dotted;">Fed-Policymaker signalisieren mögliche Zinserhöhung: Mehrere Fed-Mitglieder warnen vor anhaltend hoher Inflation infolge des Nahost-Konflikts – neue Zinserhöhung rückt wieder in den Fokus. Kerninflation lag im April bei 3,3% (annualisiert), über dem 2%-Ziel der Fed.</a></span></li><li style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#dc2626;margin-top:2px;flex-shrink:0;">●</span><span><a href="https://www.federalreserve.gov/releases/h15" target="_blank" style="color:inherit;text-decoration:underline dotted;">US-Staatsanleihen: 30-jährige Treasury-Rendite bei 5,07% (29. Mai 2026), inflationsindexierte 10-Jahres-Rendite bei 2,16% – Zinsniveau bleibt erhöht und belastet wachstumsorientierte Aktien.</a></span></li><li style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#16a34a;margin-top:2px;flex-shrink:0;">●</span><span><a href="https://openthemagazine.com/business/hedge-funds-double-down-on-ai-stocks-as-chipmakers-become-wall-streets-biggest-bet" target="_blank" style="color:inherit;text-decoration:underline dotted;">Hedge Fonds kehren massiv in KI- und Tech-Aktien zurück: Laut Goldman Sachs-Bericht befinden sich Halbleiter-Wetten auf Rekordniveau. Typische Hedge Fonds halten 72% ihres Long-Portfolios in den Top-10-Positionen – starke Konzentration in Mega-Cap-Tech.</a></span></li><li style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#16a34a;margin-top:2px;flex-shrink:0;">●</span><span><a href="https://www.fool.com/investing/2026/05/30/artificial-intelligence-ai-stock-buy-market-crash" target="_blank" style="color:inherit;text-decoration:underline dotted;">TSMC-Aktie (TSM) ist YTD +40% und +119% über die letzten 12 Monate – Motley Fool empfiehlt TSMC als Top-KI-Aktie für krisenresistente Langfristanleger mit einer 10-Jahres-Durchschnittsrendite von 33% p.a.</a></span></li><li style="margin-bottom:10px;display:flex;gap:10px;"><span style="color:#64748b;margin-top:2px;flex-shrink:0;">●</span><span><a href="https://finance.yahoo.com/sectors/technology/semiconductors" target="_blank" style="color:inherit;text-decoration:underline dotted;">Computex 2026 im Fokus: Nvidia (NVDA -1,45%) und AMD stehen im Mittelpunkt der weltgrößten Computermesse – Options-Trader wetten laut Yahoo Finance gegen die aktuelle Halbleiter-Rallye.</a></span></li></ul>
+  </div>
+
+  <!-- Earnings -->
+  <div class="card">
+    <div class="card-title">📊 Wichtige Earnings</div>
+    <div class="divider">Heute</div>
+    <div style="overflow-x:auto;">
+      <table><tr><th>Unternehmen</th><th>Erw. EPS</th><th>Erw. Umsatz</th><th>Worauf achten</th></tr><tr><td><strong>ZENA/AVXL/NNOX</strong><br><span class="sub">Zena / Avxl / Nnox (und 27 weitere)</span></td><td>k.A.</td><td>k.A.</td><td class="sub">Montag, 30 Unternehmen berichten – kleine und mittelgroße Biotech-/Medtech-Werte im Fokus; Anleger achten auf Guidance-Aussagen und Cash-Burn-Raten.</td></tr></table>
+    </div>
+    <div class="divider">Diese Woche</div>
+    <div style="overflow-x:auto;">
+      <table><tr><th>Unternehmen</th><th>Datum</th><th>Erw. EPS</th><th>Erw. Umsatz</th></tr><tr><td><strong>PANW</strong><br><span class="sub">Palo Alto Networks</span></td><td>Dienstag, 02. Juni 2026</td><td>k.A.</td><td>k.A.</td></tr><tr><td><strong>ULTA</strong><br><span class="sub">Ulta Beauty</span></td><td>Dienstag, 02. Juni 2026</td><td>k.A.</td><td>k.A.</td></tr><tr><td><strong>AVGO</strong><br><span class="sub">Broadcom</span></td><td>Mittwoch, 03. Juni 2026</td><td>k.A.</td><td>k.A.</td></tr><tr><td><strong>CRWD</strong><br><span class="sub">CrowdStrike</span></td><td>Mittwoch, 03. Juni 2026</td><td>k.A.</td><td>k.A.</td></tr><tr><td><strong>CHPT</strong><br><span class="sub">ChargePoint</span></td><td>Mittwoch, 03. Juni 2026</td><td>k.A.</td><td>k.A.</td></tr><tr><td><strong>LULU</strong><br><span class="sub">Lululemon</span></td><td>Donnerstag, 04. Juni 2026</td><td>k.A.</td><td>k.A.</td></tr><tr><td><strong>DOCU</strong><br><span class="sub">DocuSign</span></td><td>Donnerstag, 04. Juni 2026</td><td>k.A.</td><td>k.A.</td></tr><tr><td><strong>CRDO</strong><br><span class="sub">Credo Technology Group</span></td><td>Nächste Woche</td><td>k.A.</td><td>k.A.</td></tr></table>
+    </div>
+  </div>
+
+  <!-- Collapsible Charts -->
+  <div class="card">
+    <div class="card-title">📈 Live Charts <span style="font-size:11px;color:#94a3b8;font-weight:400;">— zum Öffnen klicken</span></div>
+    
+        <div class="accordion">
+          <button class="acc-btn" onclick="toggleChart('NVDA')">
+            <span><strong>NVDA</strong> — NVIDIA</span>
+            <span class="acc-arrow" id="arrow-NVDA">▼</span>
+          </button>
+          <div class="acc-body" id="chart-NVDA" style="display:none;">
+            <iframe data-src="https://s.tradingview.com/widgetembed/?symbol=NASDAQ:NVDA&interval=D&theme=light&locale=de_DE&style=1&timezone=Europe%2FVienna&hidesidetoolbar=1&withdateranges=1&hideideas=1&saveimage=0" width="100%" height="280" frameborder="0" scrolling="no" allowtransparency="true" style="display:block;"></iframe>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="acc-btn" onclick="toggleChart('AAPL')">
+            <span><strong>AAPL</strong> — Apple</span>
+            <span class="acc-arrow" id="arrow-AAPL">▼</span>
+          </button>
+          <div class="acc-body" id="chart-AAPL" style="display:none;">
+            <iframe data-src="https://s.tradingview.com/widgetembed/?symbol=NASDAQ:AAPL&interval=D&theme=light&locale=de_DE&style=1&timezone=Europe%2FVienna&hidesidetoolbar=1&withdateranges=1&hideideas=1&saveimage=0" width="100%" height="280" frameborder="0" scrolling="no" allowtransparency="true" style="display:block;"></iframe>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="acc-btn" onclick="toggleChart('TSLA')">
+            <span><strong>TSLA</strong> — Tesla</span>
+            <span class="acc-arrow" id="arrow-TSLA">▼</span>
+          </button>
+          <div class="acc-body" id="chart-TSLA" style="display:none;">
+            <iframe data-src="https://s.tradingview.com/widgetembed/?symbol=NASDAQ:TSLA&interval=D&theme=light&locale=de_DE&style=1&timezone=Europe%2FVienna&hidesidetoolbar=1&withdateranges=1&hideideas=1&saveimage=0" width="100%" height="280" frameborder="0" scrolling="no" allowtransparency="true" style="display:block;"></iframe>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="acc-btn" onclick="toggleChart('MSTR')">
+            <span><strong>MSTR</strong> — MicroStrategy</span>
+            <span class="acc-arrow" id="arrow-MSTR">▼</span>
+          </button>
+          <div class="acc-body" id="chart-MSTR" style="display:none;">
+            <iframe data-src="https://s.tradingview.com/widgetembed/?symbol=NASDAQ:MSTR&interval=D&theme=light&locale=de_DE&style=1&timezone=Europe%2FVienna&hidesidetoolbar=1&withdateranges=1&hideideas=1&saveimage=0" width="100%" height="280" frameborder="0" scrolling="no" allowtransparency="true" style="display:block;"></iframe>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="acc-btn" onclick="toggleChart('PLTR')">
+            <span><strong>PLTR</strong> — Palantir</span>
+            <span class="acc-arrow" id="arrow-PLTR">▼</span>
+          </button>
+          <div class="acc-body" id="chart-PLTR" style="display:none;">
+            <iframe data-src="https://s.tradingview.com/widgetembed/?symbol=NYSE:PLTR&interval=D&theme=light&locale=de_DE&style=1&timezone=Europe%2FVienna&hidesidetoolbar=1&withdateranges=1&hideideas=1&saveimage=0" width="100%" height="280" frameborder="0" scrolling="no" allowtransparency="true" style="display:block;"></iframe>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="acc-btn" onclick="toggleChart('BTC')">
+            <span><strong>BTC</strong> — Bitcoin</span>
+            <span class="acc-arrow" id="arrow-BTC">▼</span>
+          </button>
+          <div class="acc-body" id="chart-BTC" style="display:none;">
+            <iframe data-src="https://s.tradingview.com/widgetembed/?symbol=BITSTAMP:BTCUSD&interval=D&theme=light&locale=de_DE&style=1&timezone=Europe%2FVienna&hidesidetoolbar=1&withdateranges=1&hideideas=1&saveimage=0" width="100%" height="280" frameborder="0" scrolling="no" allowtransparency="true" style="display:block;"></iframe>
+          </div>
+        </div>
+        <div class="accordion">
+          <button class="acc-btn" onclick="toggleChart('GOOG')">
+            <span><strong>GOOG</strong> — Alphabet</span>
+            <span class="acc-arrow" id="arrow-GOOG">▼</span>
+          </button>
+          <div class="acc-body" id="chart-GOOG" style="display:none;">
+            <iframe data-src="https://s.tradingview.com/widgetembed/?symbol=NASDAQ:GOOG&interval=D&theme=light&locale=de_DE&style=1&timezone=Europe%2FVienna&hidesidetoolbar=1&withdateranges=1&hideideas=1&saveimage=0" width="100%" height="280" frameborder="0" scrolling="no" allowtransparency="true" style="display:block;"></iframe>
+          </div>
+        </div>
+  </div>
+
+  <!-- Insider & Institutional Positions -->
+  <div class="card">
+    <div class="card-title">🔍 Insider & Institutionelle Positionen</div>
+    
+        <div class="insider-row">
+          <div class="insider-header">
+            <span class="insider-name">Ron Sade (CEO & 10%-Aktionär)</span>
+            <span style="color:#94a3b8;margin:0 6px;">→</span>
+            <span class="ticker-badge">SLMT</span>
+            <span style="margin-left:auto;color:#dc2626;font-weight:600;font-size:13px;">Gekauft · $5.710.530 (1.149.000 Aktien zu $4,97)</span>
+          </div>
+          <p class="insider-note">Massiver CEO-Kauf am 21. Mai 2026 – Eigentumsanteil stieg um +600% auf 1.340.646 Aktien. Starkes Insider-Vertrauenssignal, deutet auf mögliche positive Unternehmensentwicklung hin.</p>
+          <a href="http://openinsider.com" target="_blank" class="src-link">Quelle →</a>
+        </div>
+        <div class="insider-row">
+          <div class="insider-header">
+            <span class="insider-name">Bill Ackman / Pershing Square Capital Management</span>
+            <span style="color:#94a3b8;margin:0 6px;">→</span>
+            <span class="ticker-badge">MSFT</span>
+            <span style="margin-left:auto;color:#16a34a;font-weight:600;font-size:13px;">Neue Position · k.A. (finanziert durch Verkauf von Alphabet/GOOGL)</span>
+          </div>
+          <p class="insider-note">Ackman eröffnete im Q1 2026 eine neue Position in Microsoft, nachdem der Kurs gefallen war, und verkaufte gleichzeitig seine langjährige Alphabet-Beteiligung. Deutliche Neuausrichtung Richtung Microsoft als KI-Infrastruktur-Wette.</p>
+          <a href="https://www.reuters.com/legal/government/institutional-investors-boosted-holdings-ai-infrastructure-plays-during-first-2026-05-15" target="_blank" class="src-link">Quelle →</a>
+        </div>
+        <div class="insider-row">
+          <div class="insider-header">
+            <span class="insider-name">Hedge Fonds (global, laut Goldman Sachs)</span>
+            <span style="color:#94a3b8;margin:0 6px;">→</span>
+            <span class="ticker-badge">NVDA/AMD/TSM</span>
+            <span style="margin-left:auto;color:#dc2626;font-weight:600;font-size:13px;">Gekauft · Rekordniveau bei Halbleiter-Positionen (Q2 2026)</span>
+          </div>
+          <p class="insider-note">Goldman Sachs meldet, dass globale Hedge Fonds ihre Halbleiter-Engagements auf ein Allzeithoch ausgebaut haben. KI-Infrastruktur ist die dominante Handelsstrategie im Quartal.</p>
+          <a href="https://openthemagazine.com/business/hedge-funds-double-down-on-ai-stocks-as-chipmakers-become-wall-streets-biggest-bet" target="_blank" class="src-link">Quelle →</a>
+        </div>
+  </div>
+
+  <!-- High Risk Stock -->
+  <div class="card" style="border-left:4px solid #dc2626;">
+    <div class="card-title">🎲 Hochrisiko-Newcomer <span class="tag red">Spekulativ</span></div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;flex-wrap:wrap;">
+      <span style="font-size:22px;font-weight:700;">HUBC</span>
+      <span style="color:#64748b;font-size:14px;">Hub Cyber Security</span>
+      <a href="https://www.benzinga.com/premarket" target="_blank" class="src-link">Quelle →</a>
+    </div>
+    <div class="grid3" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;">
+      <div style="background:#fef2f2;border-radius:8px;padding:12px;">
+        <div style="font-size:10px;text-transform:uppercase;color:#dc2626;font-weight:700;margin-bottom:6px;">Was es macht</div>
+        <p style="font-size:13px;color:#374151;line-height:1.5;">Hub Cyber Security ist ein israelisches Cybersicherheitsunternehmen, das auf Confidential Computing und Hardware-basierte Sicherheitslösungen spezialisiert ist.</p>
+      </div>
+      <div style="background:#fefce8;border-radius:8px;padding:12px;">
+        <div style="font-size:10px;text-transform:uppercase;color:#ca8a04;font-weight:700;margin-bottom:6px;">Warum interessant</div>
+        <p style="font-size:13px;color:#374151;line-height:1.5;">Die Aktie verzeichnet im Premarket einen explosiven Kursanstieg von +247,4% bei einem Volumen von 14,39 Millionen gehandelten Aktien – deutlich über dem Durchschnitt. Solche Bewegungen ziehen kurzfristige Momentum-Trader an.</p>
+      </div>
+      <div style="background:#fef2f2;border-radius:8px;padding:12px;">
+        <div style="font-size:10px;text-transform:uppercase;color:#dc2626;font-weight:700;margin-bottom:6px;">Risiken</div>
+        <p style="font-size:13px;color:#374151;line-height:1.5;">Derartige Kurssprünge bei kleinen Cybersecurity-Unternehmen sind häufig nicht fundamental getrieben, sondern durch Shortsqueeze, spekulative Newsflows oder Pump-and-Dump-Mechanismen. Das Kursrisiko nach unten ist nach solchen Bewegungen extrem hoch. Kein nachhaltiges Kursziel von Analysten verfügbar.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Strongly Rated Stock -->
+  <div class="card" style="border-left:4px solid #16a34a;">
+    <div class="card-title">⭐ Stark bewertete Aktie <span class="tag green">Bullish</span></div>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap;">
+      <span style="font-size:22px;font-weight:700;">TSM</span>
+      <span style="color:#64748b;font-size:14px;">Taiwan Semiconductor Manufacturing Company (TSMC)</span>
+      <span class="tag green">Ziel: k.A. (kein spezifisches Kursziel in den Quellen genannt)</span>
+      <a href="https://www.fool.com/investing/2026/05/30/artificial-intelligence-ai-stock-buy-market-crash" target="_blank" class="src-link">Quelle →</a>
+    </div>
+    <p style="font-size:14px;color:#374151;line-height:1.6;">TSMC wird von Motley Fool als die Top-KI-Aktie für krisenresistente Langfristanleger empfohlen. Als weltgrößte Auftragsfertigung ist TSMC technologisch unverzichtbar für alle großen Chiphersteller (Nvidia, Apple, AMD). Das Unternehmen konkurriert nicht mit seinen Kunden (reines Foundry-Modell), hat einen breiten Burggraben und profitiert überproportional vom globalen KI-Boom. Performance: +40% YTD, +119% in 12 Monaten, 33% durchschnittliche Jahresrendite über 10 Jahre.</p>
+  </div>
+
+  <!-- Market Events -->
+  <div class="card">
+    <div class="card-title">📅 Bevorstehende Marktereignisse</div>
+    <div class="event-row"><span class="event-date">30. Mai 2026 (Woche)</span><span class="event-dot" style="color:#dc2626;">●</span><span>Computex 2026: Nvidia, AMD und andere Chip-Giganten präsentieren neue Produkte – richtungsweisend für den Halbleitersektor und KI-Hardware-Roadmaps.</span></div><div class="event-row"><span class="event-date">Laufend (Mai/Juni 2026)</span><span class="event-dot" style="color:#dc2626;">●</span><span>Fed-Zinsrisiko: Mehrere Fed-Mitglieder (inkl. Fed Governor Bowman) signalisieren mögliche Zinserhöhung bei anhaltend hoher Inflation. FOMC-Protokoll vom 29. April 2026 bestätigt erhöhten Inflationsausblick durch Nahost-Konflikt und Energiepreise.</span></div><div class="event-row"><span class="event-date">02. Juni 2026 (Dienstag)</span><span class="event-dot" style="color:#dc2626;">●</span><span>Earnings: Palo Alto Networks (PANW), Ulta Beauty (ULTA) und weitere 22 Unternehmen berichten Quartalsergebnisse – Fokus auf Cybersecurity-Guidance und Konsumtrends.</span></div><div class="event-row"><span class="event-date">03. Juni 2026 (Mittwoch)</span><span class="event-dot" style="color:#dc2626;">●</span><span>Earnings: Broadcom (AVGO) und CrowdStrike (CRWD) berichten – besonders AVGO als KI-Chip-Lieferant im Fokus nach Microns Eintritt in den $1-Billion-Club.</span></div><div class="event-row"><span class="event-date">Laufend (Q1 2026, Abschlussphase)</span><span class="event-dot" style="color:#f59e0b;">●</span><span>Q1-Earnings-Season neigt sich dem Ende: Rund 95% der S&P-500-Unternehmen haben berichtet – Ergebnisse überwiegend positiv, mit beschleunigenden Gewinn- und Umsatzwachstumstrends.</span></div><div class="event-row"><span class="event-date">Laufend 2026</span><span class="event-dot" style="color:#f59e0b;">●</span><span>SpaceX- und OpenAI-IPO-Spekulationen heizen die KI-Rallye an – mögliche Börsengänge könnten Bewertungen im gesamten Tech-Sektor neu kalibrieren.</span></div>
+  </div>
+
+  <!-- Interesting Developments -->
+  <div class="card">
+    <div class="card-title">💡 Interessante Entwicklungen</div>
+    <div class="dev-item"><div class="dev-title"><a href="https://www.cnbc.com/semiconductors" target="_blank" style="color:#0f172a;text-decoration:none;">Micron betritt den $1-Billion-Club – Halbleitersektor auf Allzeithoch →</a></div><p class="sub" style="margin-top:4px;">Micron Technology ist dem exklusiven Klub der Billionen-Dollar-Unternehmen beigetreten. Jim Cramer kommentierte die Entwicklung für 9 weitere potenzielle Kandidaten. Gleichzeitig warnt Morningstar-Analyst William Kerwin vor einem Bären-Szenario für Micron und Memory-Chip-Aktien, da eine Marktsättigung drohen könnte.</p></div><div class="dev-item"><div class="dev-title"><a href="https://finance.yahoo.com" target="_blank" style="color:#0f172a;text-decoration:none;">Mehr ETFs als Aktien weltweit – struktureller Wandel an den Kapitalmärkten →</a></div><p class="sub" style="margin-top:4px;">Laut Yahoo Finance übersteigt die Anzahl der global gelisteten ETFs erstmals die Anzahl der börsennotierten Einzelaktien. Dies verändert die Kapitalflüsse und die Preisbildung an den Märkten fundamental – Indexprodukte dominieren zunehmend.</p></div><div class="dev-item"><div class="dev-title"><a href="https://finance.yahoo.com" target="_blank" style="color:#0f172a;text-decoration:none;">Greg Abel (Buffett-Nachfolger) kauft Magnificent-Seven-Aktie zu ~30x KGV →</a></div><p class="sub" style="margin-top:4px;">Berkshire Hathaways designierter CEO Greg Abel investiert in eine der Magnificent-Seven-Aktien zu einem Bewertungsniveau von rund dem 30-fachen Gewinn, während andere Milliardär-Hedgefondsmanager diese Position abbauen. Details zur spezifischen Aktie werden nicht offengelegt, wecken aber erhebliches Marktinteresse.</p></div><div class="dev-item"><div class="dev-title"><a href="https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm" target="_blank" style="color:#0f172a;text-decoration:none;">Fed-Protokoll (29. April 2026): Inflationsprognose für 2026 angehoben →</a></div><p class="sub" style="margin-top:4px;">Das FOMC-Protokoll zeigt, dass der Fed-Stab seine Inflationsprognose für 2026 gegenüber der März-Sitzung signifikant angehoben hat. Haupttreiber: höhere Energiepreise durch den Nahost-Konflikt und Zoll-Pass-Through. Die Inflation soll erst in der zweiten Jahreshälfte 2026 und 2027 abklingen – Zinssenkungen rücken damit in weite Ferne.</p></div><div class="dev-item"><div class="dev-title"><a href="https://www.benzinga.com/analyst-stock-ratings/downgrades" target="_blank" style="color:#0f172a;text-decoration:none;">Analyst-Downgrades: Best Buy, Caesars Entertainment und Jack in the Box abgestuft →</a></div><p class="sub" style="margin-top:4px;">UBS stufte Best Buy (BBY) von Buy auf Neutral ab (Kursziel leicht auf $86 erhöht). Guggenheim senkte Jack in the Box (JACK) von Buy auf Neutral. Susquehanna reduzierte Caesars Entertainment (CZR) von Positive auf Neutral mit gesenktem Kursziel von $34 auf $31. Defensive Konsumwerte geraten unter Druck.</p></div>
+  </div>
+
+  <!-- Disclaimer -->
+  <p style="text-align:center;font-size:11px;color:#cbd5e1;line-height:1.7;margin-top:4px;">
+    Dieser Bericht dient ausschließlich zu Informationszwecken und stellt keine Finanzberatung dar.<br>
+    Triff Anlageentscheidungen immer auf Basis eigener Recherche.
+  </p>
+
+</div>
+
+<script>
+function toggleChart(ticker){
+  var el=document.getElementById('chart-'+ticker);
+  var arrow=document.getElementById('arrow-'+ticker);
+  if(el.style.display==='none'){
+    el.style.display='block';
+    arrow.style.transform='rotate(180deg)';
+    var iframe=el.querySelector('iframe');
+    if(!iframe.src&&iframe.dataset.src)iframe.src=iframe.dataset.src;
+  }else{
+    el.style.display='none';
+    arrow.style.transform='rotate(0deg)';
+  }
+}
+</script>
+</body>
+</html>
